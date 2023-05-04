@@ -1,0 +1,45 @@
+.prnt_prt {
+    display: flex;
+    margin-top: 20px;
+}
+.prt_txt {
+    margin-top: 15px;
+}
+.prnt_brc {
+    margin-left: 40px;
+}
+
+
+
+.card{
+    border: 1px solid var(--bodrColor);
+    border-top: 3px solid var(--primary);
+    padding: 10px;
+    border-radius: 6px;
+    background: var(--grey);
+    
+    .card-head {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 10px;
+        
+        h2{
+            font-size: 16px;
+            color: var(--text);
+            line-height: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .card-body {
+        padding-top: 5px;
+        position:relative;
+        // @extend.clearfix
+    }
+
+    &.flat{
+        border:0px;
+        background: transparent;
+    }
+}
