@@ -70,18 +70,18 @@
               <div id="print_card">
                 <div id='qr_code_container' *ngFor="let row of print_coupon">
                   <div
-                    style="padding:0px;height: 100.5905511811px; width: 377.9527559055px; border-radius: 10px;margin: 0 auto;display: flex;background-color: #fff; position: relative;">
+                    style="padding:0px;height: 94.488188976px; width: 188.97637795px; border-radius: 10px;margin: 0 auto;display: flex;background-color: #fff; position: relative;">
                     <div style="width: 250px;">
                       <h5
-                        style="font-family: 'Roboto', sans-serif;border-bottom: 1px solid #000;font-size: 14px;margin: 0;margin-bottom: 3px;padding-bottom: 3px;">
+                        style="font-family: 'Roboto', sans-serif;border-bottom: 1px solid #000;font-size: 10px;margin: 0;margin-bottom: 3px;padding-bottom: 3px;margin-top: 17px;">
                         <span style="display:block;font-family: 'Roboto', sans-serif;margin: 0;">Kcsad Led</span>
                       </h5>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0">Date of pkg. {{row.date_created}}</p>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0">Coupon Code {{row.coupon_code}}</p>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0">Product Point Group {{row.product_point_group}}</p>
+                      <!-- <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0">{{row.date_created}}</p> -->
+                      <p style="font-family: 'Roboto', sans-serif;font-size: 10px;margin:0">{{row.coupon_code}}</p>
+                      <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0"> {{row.product_point_group}}</p>
                     </div>
                     <div style="text-align: right">
-                      <div class="qr-img" style="width: 105px;overflow: hidden;height: 105px;">
+                      <div class="qr-img" >
                         <ngx-qrcode [elementType]="elementType" value="{{row.coupon_code}}" cssClass="aclass"
                           errorCorrectionLevel="L">
                         </ngx-qrcode>
