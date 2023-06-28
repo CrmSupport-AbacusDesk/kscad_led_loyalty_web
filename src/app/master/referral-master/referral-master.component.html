@@ -35,11 +35,31 @@
                             <div class="col s4">
                                 <div class="control-field">
                                     <mat-form-field class="cs-input">
-                                        <label class="wlc_fnt"> Welcome Points</label><br>
+                                        <label class="wlc_fnt">Electrician Welcome Points</label><br>
                                         <input matInput (keypress)="number($event)" name="wlcom_points" [(ngModel)]="refer.wlcom_points">
                                     </mat-form-field>  
                                 </div>
                             </div>
+
+                            <div class="col s4">
+                                <div class="control-field">
+                                    <mat-form-field class="cs-input">
+                                        <label class="wlc_fnt">Dealer Welcome Points</label><br>
+                                        <input matInput (keypress)="number($event)" name="dealer_wlcom_points" [(ngModel)]="refer.dealer_wlcom_points">
+                                    </mat-form-field>  
+                                </div>
+                            </div>
+
+                            <div class="col s4">
+                                <div class="control-field">
+                                    <mat-form-field class="cs-input">
+                                        <label class="wlc_fnt">Architect Welcome Points</label><br>
+                                        <input matInput (keypress)="number($event)" name="architect_wlcom_points" [(ngModel)]="refer.architect_wlcom_points">
+                                    </mat-form-field>  
+                                </div>
+                            </div>
+
+
                             <div class="col s4">
                                 <div class="control-field">
                                     <mat-form-field class="cs-input">
@@ -56,9 +76,7 @@
                                     </mat-form-field>  
                                 </div>
                             </div>
-                           
-                        </div>
-                        <div class="row mb0">
+
                             <div class="col s4">
                                 <div class="control-field">
                                     <mat-form-field class="cs-input">
@@ -67,6 +85,10 @@
                                     </mat-form-field>  
                                 </div>
                             </div>
+                           
+                        </div>
+                        <div class="row mb0">
+                           
                             
                             <div class="col s4">
                                 <div class="control-field">

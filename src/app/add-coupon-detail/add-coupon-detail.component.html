@@ -74,7 +74,10 @@
                     <div class="qr_img" *ngFor="let row of print_coupon" style="width: 94.488188976px; height: 94.488188976px;padding-top: 0px;text-align: center;">
                       <ngx-qrcode [elementType]="elementType" value="{{row.coupon_code}}" cssClass="aclass qr_img" errorCorrectionLevel="L">
                       </ngx-qrcode>
+                      <p style="font-family: 'Roboto', sans-serif;font-size: 5px;margin:0;"><strong>{{row.product_point_group}}</strong></p>
                       <p style="font-family: 'Roboto', sans-serif;font-size: 5px;margin:0;"><strong>{{row.coupon_code}}</strong></p>
+                    
+
                     </div>
                   </div>
                 </div>
@@ -85,7 +88,7 @@
 
               <div class="col s3" *ngFor="let row of print_coupon">
 
-                <div class="card mt10" style="border: 1px solid;height: 160px;">
+                <div class="card mt10" style="border: 1px solid;height: 170px;">
 
                   <div class="prnt_brc m0" >
       
@@ -97,7 +100,9 @@
                   <div class="prnt_prt">
                     <div class="prt_txt">
                       <!-- <label><strong>Date:</strong> {{row.date_created}} </label><br> -->
-                      <label > {{row.coupon_code}} </label><br>
+                      <label > {{row.product_point_group}} </label><br>
+                      <label > {{row.coupon_code}} </label><br><br>
+                     
                       <!-- <label > {{row.product_point_group}}</label> -->
                     </div>
                  
