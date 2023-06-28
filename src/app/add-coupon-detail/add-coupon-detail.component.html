@@ -66,39 +66,21 @@
               <h2>QR CODE</h2>
             </div>
 
-            <div class="card card-statistics" style="width: 50%;margin-left: 250px;" hidden>
+            <div class="card card-statistics" style="width: 50%;margin-left: 250px;margin: 0 auto;" hidden>
               <div id="print_card">
-                <div id='qr_code_container' *ngFor="let row of print_coupon">
-                  <div
-                    style="padding:0px;height: 94.488188976px; width: 94.488188976px; border-radius: 10px;margin: 0 auto;">
-                    <!-- <div >
-                      <h5
-                        style="font-family: 'Roboto', sans-serif;border-bottom: 1px solid #000;font-size: 10px;margin: 0;margin-bottom: 3px;padding-bottom: 3px;margin-top: 17px;">
-                        <span style="display:block;font-family: 'Roboto', sans-serif;margin: 0;">Kcsad Led</span>
-                      </h5>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0">{{row.date_created}}</p>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 10px;margin:0;">{{row.coupon_code}}</p>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 12px;margin:0"> {{row.product_point_group}}</p>
-                    </div> -->
-                    <div >
-                      <div class="qr-img" >
-                        <ngx-qrcode [elementType]="elementType" value="{{row.coupon_code}}" cssClass="aclass"
-                          errorCorrectionLevel="L">
-                        </ngx-qrcode>
-                      </div>
-                   <div>
-                        <p style="font-family: 'Roboto', sans-serif;font-size: 9px;margin:0;">{{row.coupon_code}}</p>
+                <div id='qr_code_container' >
 
-                       </div>
-
+                  <div style="height:94.488188976px; width:377.952756px; border-radius: 10px;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;">
+                    <div class="qr_img" *ngFor="let row of print_coupon" style="width: 94.488188976px; height: 94.488188976px;padding-top: 0px;text-align: center;">
+                      <ngx-qrcode [elementType]="elementType" value="{{row.coupon_code}}" cssClass="aclass qr_img" errorCorrectionLevel="L">
+                      </ngx-qrcode>
+                      <p style="font-family: 'Roboto', sans-serif;font-size: 5px;margin:0;"><strong>{{row.coupon_code}}</strong></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="save un-save mt10 ">
-            <button mat-button (click)="printData()">Print Data</button>
-            </div> -->
+          
             <div class="row mt10">
 
               <div class="col s3" *ngFor="let row of print_coupon">

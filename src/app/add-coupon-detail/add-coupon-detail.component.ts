@@ -51,28 +51,46 @@ export class AddCouponDetailComponent implements OnInit {
           margin-bottom: 0px
         }
         @page { 
-          margin: 0.03in 0.1in 0.02in 0.00in;  
+          margin: 0.01in 0.00in 0.00in 0.00in;  
         }
         
         .bar-code-img, .barcode{
           
-          width:60px !important;
-          min-width:60px !important;
-          height: 60px !important;
+          width:50px !important;
+          min-width:50px !important;
+          height: 50px !important;
         }
-        .aclass img {
-          width: 60px;
-          height: 60px;
-    margin-top: 15px !important;
-
-      }
-      .aclass {
-        text-align: center !important;
-    }
         .barcode svg{
           width: 100%;
           height: 100%;
         }
+        .qr_img img {
+          width: 50px !important;
+          height: 50px !important;
+          margin-top: 30px !important;
+          margin-left: 5px !important;
+      }
+      
+      
+  //     .ea_img img {
+  //       width: 60px !important;
+  //       height: 130px !important;
+  //       object-fit: contain !important;
+  //       rotate: 359deg !important;
+  //       margin-top: 20px !important;
+  //   }
+    
+
+  //   .ea_img_new img {
+  //     width: 60px !important;
+  //     height: 100px !important;
+  //     object-fit: contain !important;
+  //     rotate: 359deg !important;
+  //     margin-top: 15px !important;
+  // }
+
+
+
       
         
         body
