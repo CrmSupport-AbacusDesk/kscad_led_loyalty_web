@@ -66,7 +66,7 @@
               <h2>QR CODE</h2>
             </div>
 
-            <div class="card card-statistics" style="width: 50%;margin-left: 250px;margin: 0 auto;" hidden>
+            <div class="card card-statistics" style="width: 50%;margin-left: 250px;margin: 0 auto;" hidden >
               <div id="print_card">
                 <div id='qr_code_container' >
 
@@ -74,8 +74,8 @@
                     <div class="qr_img" *ngFor="let row of print_coupon" style="width: 94.488188976px; height: 94.488188976px;padding-top: 0px;text-align: center;">
                       <ngx-qrcode [elementType]="elementType" value="{{row.coupon_code}}" cssClass="aclass qr_img" errorCorrectionLevel="L">
                       </ngx-qrcode>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 5px;margin:0;"><strong>{{row.product_point_group}}</strong></p>
-                      <p style="font-family: 'Roboto', sans-serif;font-size: 5px;margin:0;"><strong>{{row.coupon_code}}</strong></p>
+                      <p style="font-family: 'Roboto', sans-serif;font-size: 7px;margin:0;"><strong>{{row.product_point_group}}</strong></p>
+                      <p style="font-family: 'Roboto', sans-serif;font-size: 7px;margin:0;padding-top: 1px;"><strong>{{row.coupon_code}}</strong></p>
                     
 
                     </div>
