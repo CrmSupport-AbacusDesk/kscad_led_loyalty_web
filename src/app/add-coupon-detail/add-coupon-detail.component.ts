@@ -65,8 +65,8 @@ export class AddCouponDetailComponent implements OnInit {
           height: 100%;
         }
         .qr_img img {
-          width: 35px !important;
-          height: 35px !important;
+          width: 60px !important;
+          height: 45px !important;
           margin-top: 35px !important;
           // margin-left: 5px !important;
       }
